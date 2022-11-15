@@ -5,71 +5,166 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+  <div class="container">
+    <!-- Left Card -->
+    <div class="card">
+      <div class="user-details-container">
+        <div class="user-details">
+          <img class="user-photo" src="images/image-jeremy.png">
+          <br><br>
+          <span class="user-title">Report for</span>
+          <br>
+          <span class="user-name">Jeremy Robson</span>
+        </div>
+      </div>
+      <div class="days-list-container">
+        <div class="days-list">
+          <div class="day">Daily</div>
+          <div class="active-day">Weekly</div>
+          <div class="day">Monthly</div>
+        </div>
+      </div>
+    </div>
 
-  Daily
-  Weekly
-  Monthly
+    <!-- Activity cards -->
+    <div class="activity-cards">
+      <div class="card-container" style="background-color: hsl(15, 100%, 70%) !important;">
+        <img src="images/icon-work.svg" class="card-icon">
+        <div class="main-card">
+          <div class="main-card-content">
+            <div class="top-line">
+              <div class="card-title">Work</div>
+              <div class="bubble-line">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+              </div>
+            </div>
+            <div class="hours">
+              32hrs
+            </div>
+            <div class="hours-total">
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container" style="background-color: hsl(195, 74%, 62%) !important;">
+        <img src="images/icon-play.svg" class="card-icon">
+        <div class="main-card">
+          <div class="main-card-content">
+            <div class="top-line">
+              <div class="card-title">Play</div>
+              <div class="bubble-line">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+              </div>
+            </div>
+            <div class="hours">
+              10hrs
+            </div>
+            <div class="hours-total">
+              Last Week - 8hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container" style="background-color: hsl(348, 100%, 68%) !important;">
+        <img src="images/icon-study.svg" class="card-icon">
+        <div class="main-card">
+          <div class="main-card-content">
+            <div class="top-line">
+              <div class="card-title">Study</div>
+              <div class="bubble-line">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+              </div>
+            </div>
+            <div class="hours">
+              4hrs
+            </div>
+            <div class="hours-total">
+              Last Week - 7hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container" style="background-color: hsl(145, 58%, 55%) !important;">
+        <img src="images/icon-exercise.svg" class="card-icon">
+        <div class="main-card">
+          <div class="main-card-content">
+            <div class="top-line">
+              <div class="card-title">Exercise</div>
+              <div class="bubble-line">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+              </div>
+            </div>
+            <div class="hours">
+              4hrs
+            </div>
+            <div class="hours-total">
+              Last Week - 5hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container" style="background-color: hsl(264, 64%, 52%) !important;">
+        <img src="images/icon-social.svg" class="card-icon">
+        <div class="main-card">
+          <div class="main-card-content">
+            <div class="top-line">
+              <div class="card-title">Social</div>
+              <div class="bubble-line">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+              </div>
+            </div>
+            <div class="hours">
+              5hrs
+            </div>
+            <div class="hours-total">
+              Last Week - 10hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container" style="background-color: hsl(43, 84%, 65%) !important;">
+        <img src="images/icon-self-care.svg" class="card-icon">
+        <div class="main-card">
+          <div class="main-card-content">
+            <div class="top-line">
+              <div class="card-title">Self Care</div>
+              <div class="bubble-line">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+              </div>
+            </div>
+            <div class="hours">
+              2hrs
+            </div>
+            <div class="hours-total">
+              Last Week - 2hrs
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+  
 
   
   <div class="attribution">

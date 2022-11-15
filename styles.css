@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    font-size: 18px;
+}
+
+.container {
+    margin: auto;
+    width: 1112px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.day {
+    color: hsl(235, 45%, 61%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: grab;
+}
+
+.day:hover {
+    color: hsl(236, 100%, 87%);
+}
+
+.active-day {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 12px;
+    width: 256px;
+    height: 520px;
+}
+
+.days-list-container {
+    height: 164px;
+    display: flex;
+}
+
+.days-list {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 34px;
+}
+
+.user-details-container {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 12px;
+    height: 356px;
+    width: 256px;
+}
+
+.user-details {
+    position: relative;
+    padding: 34px;
+}
+
+.user-photo {
+    width: 85px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.user-name {
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.user-title {
+    font-size: 14px;
+    color: hsl(236, 100%, 87%);
+}
+
+.activity-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "card card card" 
+        "card card card";
+    gap: 20px 0;
+}
+
+.card-container {
+    width: 256px;
+    height: 246px;
+    border-radius: 12px;
+    background-color: pink;
+    display: flex;
+}
+
+.card-icon {
+    position: absolute;
+    float: right;
+    clip: rect(8px,90px,54px,0px);
+    margin-top: -8px;
+    margin-left: 155px;
+}
+
+.main-card {
+    display: flex;
+    margin-top :auto;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.main-card-content {
+    margin: auto;
+    width: 75%;
+    height: 75%;
+}
+
+.bubble-line {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.bubble {
+    background-color: hsl(236, 100%, 87%);
+    width: 5px;
+    height: 5px;
+    margin: 1px;
+    border-radius: 50%;
+}
+
+.top-line {
+    display: flex;
+}
+
+.card-title {
+    color: white;
+    font-size: 20px;
+}
+
+.hours {
+    color: white;
+    font-size: 48px;
+    margin-top: 32px;
+    font-weight: 200;
+}
+
+.hours-total {
+    color:  hsl(236, 100%, 87%);
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.attribution { 
+    font-size: 11px; 
+    color: hsl(235, 45%, 61%);
+    position: fixed;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 2%;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
